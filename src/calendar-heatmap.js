@@ -1,9 +1,9 @@
 
-function calendarHeatmap() {
+function calendarHeatmap(options) {
   // defaults
-  var width = 750;
-  var height = 110;
-  var legendWidth = 150;
+  var width = options.width || 750;
+  var height = options.height || 110;
+  var legendWidth = options.legendWidth || 150;
   var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
   var selector = 'body';
